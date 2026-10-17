@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Money - Quản lý chi tiêu</title>
+<style>
+:root{--bg:#0B0F14;--surface:#151B23;--text:#E6EAF0;--muted:#9AA5B1;--accent:#2DD4BF;--border:#2A313C;--warn:#F87171}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+ font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+ padding:2.5rem 1.25rem 5rem}
+main{max-width:46rem;margin:0 auto}
+h1{font-size:1.9rem;line-height:1.25;margin:0 0 .4rem}
+h2{font-size:1.3rem;margin:2.5rem 0 .75rem;padding-top:1.25rem;border-top:1px solid var(--border)}
+h3{font-size:1.05rem;margin:1.75rem 0 .5rem;color:var(--muted)}
+p,li{color:var(--text)}
+a{color:var(--accent)}
+code{background:var(--surface);padding:.15em .4em;border-radius:4px;font-size:.9em}
+table{width:100%;border-collapse:collapse;margin:1rem 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--border);padding:.5rem .7rem;text-align:left;font-size:.93rem}
+th{background:var(--surface)}
+hr{border:0;border-top:1px solid var(--border);margin:3rem 0}
+strong{color:#fff}
+.nav{margin-bottom:2rem;font-size:.93rem}
+.nav a{margin-right:1.25rem}
+.todo{background:#3A1F1F;border:1px solid var(--warn);color:#FFD9D9;
+ padding:.15em .5em;border-radius:4px;font-weight:600;font-size:.9em}
+footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--border);
+ color:var(--muted);font-size:.88rem}
+.sub{color:var(--muted);font-size:1.15rem;margin:0 0 1.25rem}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);font-weight:600;
+ padding:.6rem 1.2rem;border-radius:10px;text-decoration:none}
+.shots{display:flex;flex-wrap:wrap;gap:1rem;margin:1.5rem 0}
+.shots figure{margin:0;flex:1 1 11rem;max-width:15rem}
+.shots img{display:block;max-width:100%;height:auto;border-radius:12px;border:1px solid var(--border)}
+.shots figcaption{color:var(--muted);font-size:.88rem;margin-top:.4rem}
+</style>
+</head>
+<body>
+<main>
+<div class="nav"><a href="/amoney/" style='font-weight:600'>A Money</a><a href="/amoney/support/">Hỗ trợ</a><a href="/amoney/privacy">Chính sách bảo mật</a><a href="/amoney/terms">Điều khoản dịch vụ</a></div>
+<h1>Tiếng Việt</h1>
+<h2>A Money - Quản lý chi tiêu</h2>
+<p class="sub">Ghi chi tiêu trong 3 giây</p>
+<p>A Money là sổ chi tiêu tiếng Việt cho iPhone. Mở app, chạm một danh mục, gõ số tiền — xong. Không biểu mẫu dài, không bước thừa.</p>
+<p><span class="todo">Tải trên App Store — [CHÈN LINK APP STORE SAU KHI DUYỆT]</span></p>
+<div class="shots">
+<figure><img src="./img/01-home.png" width="1320" height="2868" loading="lazy" alt="Trang chủ A Money: tổng chi tháng này, thanh ngân sách đã dùng 70%, lưới danh mục và các giao dịch gần đây"><figcaption>Mở app là thấy tiền đi đâu</figcaption></figure>
+<figure><img src="./img/06-household-report.png" width="1320" height="2868" loading="lazy" alt="Báo cáo ở chế độ Cả hộ: tổng chi của cả hộ trong tháng chia theo danh mục, không tính giao dịch riêng tư"><figcaption>Cả nhà cùng nhìn một con số</figcaption></figure>
+<figure><img src="./img/10-offline.png" width="1320" height="2868" loading="lazy" alt="Trang chủ khi mất mạng: dải trạng thái báo ngoại tuyến và số thay đổi đang chờ đồng bộ"><figcaption>Mất mạng vẫn ghi được</figcaption></figure>
+</div>
+<h3>Ghi nhanh</h3>
+<ul><li>Bàn phím số riêng cho việc nhập tiền, không phải bàn phím hệ thống</li><li>Lưới danh mục ngay trên Trang chủ — chạm là ghi</li><li>Thêm ghi chú và đổi ngày khi cần, bỏ qua khi không cần</li></ul>
+<h3>Nhìn ra bức tranh</h3>
+<ul><li>Trang chủ mở ra là thấy tổng chi tháng này</li><li>Thanh ngân sách thu gọn cho biết đã dùng bao nhiêu phần hạn mức</li><li>Danh sách giao dịch có lọc theo danh mục và chuyển tháng; vuốt để sửa hoặc xoá</li></ul>
+<h3>Danh mục và ngân sách</h3>
+<ul><li>Tạo, sửa, xoá danh mục với 16 biểu tượng và 8 màu</li><li>Khi xoá một danh mục, bạn chọn xoá luôn các giao dịch trong đó hoặc dồn chúng về "Khác"</li><li>Đặt hạn mức cho từng danh mục, theo từng tháng; cảnh báo ngay khi một danh mục vượt ngưỡng</li></ul>
+<h3>Báo cáo tháng</h3>
+<ul><li>Biểu đồ tròn chia theo danh mục, kèm bảng số tiền và phần trăm</li><li>Chạm một danh mục để xem đúng những giao dịch của nó; chuyển qua lại giữa các tháng</li></ul>
+<h3>Cả nhà cùng nhìn một con số</h3>
+<ul><li>Tạo một hộ rồi gửi mã mời cho người nhà, hoặc nhập mã để tham gia hộ đã có</li><li>Màn Báo cáo có thêm chế độ "Cả hộ": tổng chi của cả hộ trong tháng, chia theo danh mục</li><li>Khoản nào muốn giữ cho riêng mình, bật "Riêng tư" khi ghi — thành viên khác không thấy, và báo cáo cả hộ không tính khoản đó</li><li>Chủ hộ đổi tên hộ, tạo mã mời mới, xoá thành viên hoặc giải tán hộ; thành viên có thể rời hộ và giữ nguyên dữ liệu của mình</li></ul>
+<h3>Giao dịch định kỳ</h3>
+<ul><li>Thêm khoản chi lặp lại mỗi tháng như tiền nhà, tiền mạng hay gói đăng ký — chọn ngày trong tháng, app tự ghi vào đúng ngày</li><li>Tháng không có ngày đã chọn thì ghi vào ngày cuối tháng</li><li>Tắt, bật lại hoặc xoá bất cứ lúc nào; các giao dịch đã ghi trước đó giữ nguyên</li></ul>
+<h3>Nhắc nhở hằng ngày</h3>
+<p>Bật nhắc ghi chi tiêu và chọn giờ nhắc trong Cài đặt. App chỉ nhắc khi hôm đó bạn chưa ghi gì.</p>
+<h3>Dùng được khi không có mạng</h3>
+<p>Dữ liệu nằm trên máy bạn. Ghi, sửa, xoá, đặt hạn mức, xem báo cáo — tất cả chạy bình thường ở chế độ máy bay hay khi mất sóng. Khi mạng trở lại, app tự đồng bộ và luôn cho bạn thấy còn bao nhiêu thay đổi đang chờ.</p>
+<h3>Đồng bộ nhiều thiết bị</h3>
+<p>Đăng nhập bằng Apple hoặc Google, cùng một tài khoản trên các máy của bạn, để dùng chung một quyển sổ. Dải trạng thái ở đầu Trang chủ nói rõ app đang đồng bộ, đang ngoại tuyến, hay cần đăng nhập lại.</p>
+<p>Đồng bộ, hộ gia đình và giao dịch định kỳ cần tài khoản và kết nối tới máy chủ của A Money.</p>
+<h3>Riêng tư</h3>
+<p>Không quảng cáo. Không theo dõi. Không thư viện phân tích của bên thứ ba. Dữ liệu trên máy được iOS bảo vệ, chỉ đọc được khi máy đã mở khoá. Xoá tài khoản ngay trong Cài đặt. Chi tiết: <a href="/amoney/privacy">Chính sách bảo mật</a>.</p>
+<h3>Thông tin</h3>
+<p>Dành cho iPhone, iOS 17 trở lên. Giao diện tiếng Việt. Đơn vị tiền: VND, số nguyên. Bản này ghi khoản chi; chưa theo dõi thu nhập.</p>
+<p>Cần giúp đỡ? Xem trang <a href="/amoney/support/">Hỗ trợ</a> hoặc gửi thư tới <a href="mailto:amoney.support@gmail.com">amoney.support@gmail.com</a>.</p>
+<hr>
+<h1>English</h1>
+<h2>A Money - Quản lý chi tiêu</h2>
+<p class="sub">Log an expense in 3 seconds</p>
+<p>A Money is a Vietnamese-language expense book for iPhone. Open the app, tap a category, type the amount — done. No long forms, no extra steps. The app is available in Vietnamese only.</p>
+<p><span class="todo">Download on the App Store — [CHÈN LINK APP STORE SAU KHI DUYỆT]</span></p>
+<div class="shots">
+<figure><img src="./img/01-home.png" width="1320" height="2868" loading="lazy" alt="A Money home screen: this month's spending total, a budget bar at 70% used, the category grid and recent transactions"><figcaption>See where your money goes the moment you open the app</figcaption></figure>
+<figure><img src="./img/06-household-report.png" width="1320" height="2868" loading="lazy" alt="Report in whole-household mode: the household's monthly total broken down by category, private transactions excluded"><figcaption>The whole family looks at one number</figcaption></figure>
+<figure><img src="./img/10-offline.png" width="1320" height="2868" loading="lazy" alt="Home screen while offline: the status strip shows offline and the number of changes waiting to sync"><figcaption>Keep logging without a connection</figcaption></figure>
+</div>
+<h3>Quick logging</h3>
+<ul><li>A dedicated number pad for entering amounts, not the system keyboard</li><li>The category grid sits right on the Home screen — tap to log</li><li>Add a note or change the date when you need to, skip it when you don't</li></ul>
+<h3>See the big picture</h3>
+<ul><li>The Home screen opens on this month's total spending</li><li>A compact budget bar shows how much of your limits you have used</li><li>The transaction list filters by category and switches months; swipe to edit or delete</li></ul>
+<h3>Categories and budgets</h3>
+<ul><li>Create, edit and delete categories with 16 icons and 8 colours</li><li>When you delete a category, choose to delete its transactions too or move them to "Khác" (Other)</li><li>Set a limit for each category, month by month; get a warning as soon as a category goes over its threshold</li></ul>
+<h3>Monthly report</h3>
+<ul><li>A donut chart by category, with a table of amounts and percentages</li><li>Tap a category to see exactly its transactions; move back and forth between months</li></ul>
+<h3>The whole family, one number</h3>
+<ul><li>Create a household and send the invite code to your family, or enter a code to join an existing household</li><li>The Report screen gains a "whole household" mode: the household's total spending for the month, by category</li><li>For anything you want to keep to yourself, turn on "Private" when logging — other members don't see it, and the household report doesn't count it</li><li>The owner can rename the household, issue a new invite code, remove members or dissolve the household; members can leave and keep their own data</li></ul>
+<h3>Recurring transactions</h3>
+<ul><li>Add expenses that repeat every month, such as rent, internet or subscriptions — pick a day of the month and the app records it on that day</li><li>In a month without the chosen day, it is recorded on the last day of the month</li><li>Turn off, turn back on or delete at any time; transactions already recorded stay as they are</li></ul>
+<h3>Daily reminder</h3>
+<p>Turn on the logging reminder and pick a time in Settings. The app reminds you only on days when you have not logged anything.</p>
+<h3>Works without a connection</h3>
+<p>Your data lives on your device. Logging, editing, deleting, setting limits, viewing reports — all work normally in Airplane Mode or with no signal. When the connection returns, the app syncs on its own and always shows you how many changes are still waiting.</p>
+<h3>Sync across devices</h3>
+<p>Sign in with Apple or Google, using the same account on each of your devices, to share one expense book. The status strip at the top of the Home screen tells you whether the app is syncing, offline, or needs you to sign in again.</p>
+<p>Sync, households and recurring transactions need an account and a connection to the A Money server.</p>
+<h3>Privacy</h3>
+<p>No advertising. No tracking. No third-party analytics libraries. Data on the device is protected by iOS and can be read only while the device is unlocked. Delete your account right in Settings. Details: <a href="/amoney/privacy">Privacy Policy</a>.</p>
+<h3>Details</h3>
+<p>For iPhone, iOS 17 or later. Vietnamese interface. Currency: Vietnamese đồng (VND), whole numbers. This version records expenses; it does not track income yet.</p>
+<p>Need help? See the <a href="/amoney/support/">Support</a> page or write to <a href="mailto:amoney.support@gmail.com">amoney.support@gmail.com</a>.</p>
+<footer>A Money — Nguyen Xuan Tien</footer>
+</main>
+</body>
+</html>
